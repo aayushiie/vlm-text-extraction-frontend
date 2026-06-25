@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("/fonts/SpaceGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+	font-family: "iA Writer Mono";
+	font-display: swap;
+	src: url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff2)
+			format("woff2"),
+		url(https://cdn.jsdelivr.net/fontsource/fonts/ia-writer-mono@latest/latin-400-normal.woff)
+			format("woff");
+}
+
+@theme {
+  --font-space: "Space Grotesk", sans-serif;
+  --font-mono: "iA Writer Mono", sans-serif;
+}
+
+:root {
+	--bg: #FFFFFF;
+	/* --bg: #DAF0F7; */
+	--text: #1B3038;
+}
+
+::selection{
+  background-color: #DBEAFE;
+  color: #454242;
+}
+
+[data-theme="dark"] {
+  --bg: #121212;
+  --text: #FAF9F6;
+}
+
+html,
+body {
+	padding: 20px;
+	word-wrap: break-word;
+	overflow-wrap: break-word;
+	background-color: var(--bg);
+	color: var(--text);
+}
