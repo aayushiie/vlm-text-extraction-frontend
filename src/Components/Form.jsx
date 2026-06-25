@@ -127,14 +127,14 @@ const Form = () => {
 
           <div className="mt-6 flex gap-4">
             <a
-              href={`http://localhost:8000${report.downloads.csv}`}
+              href={`https://vlm-text-extraction-backend.onrender.com${report.downloads.csv}`}
               download
               className="bg-blue-200 px-4 py-2 font-semibold rounded-xl text-sm no-underline hover:bg-blue-300"
             >
               Download CSV
             </a>
             <a
-              href={`http://localhost:8000${report.downloads.excel}`}
+              href={`https://vlm-text-extraction-backend.onrender.com${report.downloads.excel}`}
               download
               className="bg-blue-200 px-4 py-2 rounded-xl font-semibold text-sm no-underline hover:bg-blue-300"
             >
