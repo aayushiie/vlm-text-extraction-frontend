@@ -51,7 +51,7 @@ const Form = () => {
     });
 
     try {
-      const response = await fetch("http://localhost:8000/process-attendance", {
+      const response = await fetch("https://vlm-text-extraction-backend.onrender.com/process-attendance", {
         method: "POST",
         body: formData,
       });
