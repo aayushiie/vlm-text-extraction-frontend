@@ -7,7 +7,7 @@ const Footer = () => {
     <div>:)</div>
     <div className='flex justify-between items-center gap-x-2'>
       <Link to='/docs' className='hover:underline'>Docs</Link>
-      <a href="" target='blank' className='hover:underline'>Code</a>
+      <a href="https://github.com/aayushiie/vlm-text-extraction-backend" target='blank' className='hover:underline'>Code</a>
     </div>
     </footer>
   )
